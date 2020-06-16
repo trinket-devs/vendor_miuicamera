@@ -21,6 +21,7 @@ soong_namespace {
 
 android_app_import {
 	name: "MiuiCamera",
+	overrides: ["Camera2", "Snap"],
 	owner: "miuicamera",
 	apk: "proprietary/priv-app/MiuiCamera/MiuiCamera.apk",
 	certificate: "platform",

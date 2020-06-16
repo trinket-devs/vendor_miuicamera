@@ -46,6 +46,8 @@ sed -i 's|vendor/miuicamera/|vendor/miuicamera/common|g' $PRODUCTMK
 sed -i 's|device/miuicamera//setup-makefiles.sh|vendor/miuicamera/setup-makefiles.sh|g' $ANDROIDBP $ANDROIDMK $BOARDMK $PRODUCTMK
 
 write_makefiles "$MY_DIR"/proprietary-files.txt true
+line_number=$(grep -rn 'name: "MiuiCamera"' $ANDROIDBP | awk '{print $1}' | tr -d ":")
+sed -i "$line_number a \\\toverrides: [\"Camera2\", \"Snap\"]," $ANDROIDBP
 
 # Finish
 write_footers
