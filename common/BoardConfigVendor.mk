@@ -12,3 +12,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Sepolicy
+BOARD_SEPOLICY_DIRS += vendor/miuicamera/common/sepolicy
