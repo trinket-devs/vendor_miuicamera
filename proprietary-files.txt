@@ -1,13 +1,39 @@
-# MiuiCamera - from Mi A2 V11.0.10.0.QDIMIXM
+# MiuiCamera - from laurel_sprout V11.0.15.0.QFQMIXM - manually patched
+-priv-app/MiuiCamera/MiuiCamera.apk|2a742a5feefa5e95e3f7e7fb2425942b7a2b2d26
+
+# MiuiCamera - libraries - from laurel_sprout V11.0.15.0.QFQMIXM
+lib64/libarc_layer_sgl.so:priv-app/MiuiCamera/lib/arm64/libarc_layer_sgl.so
 lib64/libCameraEffectJNI.so:priv-app/MiuiCamera/lib/arm64/libCameraEffectJNI.so
+lib64/libarcsoft_wideselfie.so:priv-app/MiuiCamera/lib/arm64/libarcsoft_wideselfie.so
+lib64/libcamera_arcsoft_beautyshot.so:priv-app/MiuiCamera/lib/arm64/libcamera_arcsoft_beautyshot.so
+lib64/libcamera_arcsoft_handgesture.so:priv-app/MiuiCamera/lib/arm64/libcamera_arcsoft_handgesture.so
+lib64/libcamera_beauty_mpbase.so:priv-app/MiuiCamera/lib/arm64/libcamera_beauty_mpbase.so
+lib64/libcamera_handgesture_mpbase.so:priv-app/MiuiCamera/lib/arm64/libcamera_handgesture_mpbase.so
+lib64/libcamera_wideselfie_mpbase.so:priv-app/MiuiCamera/lib/arm64/libcamera_wideselfie_mpbase.so
+lib64/libcom.xiaomi.camera.requestutil.so:priv-app/MiuiCamera/lib/arm64/libcom.xiaomi.camera.requestutil.so
+lib64/libhandengine.arcsoft.so:priv-app/MiuiCamera/lib/arm64/libhandengine.arcsoft.so
+lib64/libjni_arcsoft_beautyshot.so:priv-app/MiuiCamera/lib/arm64/libjni_arcsoft_beautyshot.so
+lib64/libjni_wideselfie.so:priv-app/MiuiCamera/lib/arm64/libjni_wideselfie.so
 lib64/libmorpho_memory_allocator.so:priv-app/MiuiCamera/lib/arm64/libmorpho_memory_allocator.so
 lib64/libmorpho_panorama.so:priv-app/MiuiCamera/lib/arm64/libmorpho_panorama.so
 lib64/libmorpho_panorama_gp.so:priv-app/MiuiCamera/lib/arm64/libmorpho_panorama_gp.so
--priv-app/MiuiCamera/MiuiCamera.apk
+lib64/libmorpho_panorama_gp3.so:priv-app/MiuiCamera/lib/arm64/libmorpho_panorama_gp3.so
+lib64/libmorpho_sensor_fusion.so:priv-app/MiuiCamera/lib/arm64/libmorpho_sensor_fusion.so
 
 # Permission
-etc/permissions/com.android.camera.xml|fbc03150644d63f6cc1ed41278922dabbb9c7d2d
+etc/permissions/privapp-permissions-miuicamera.xml
 
 # Device features
-etc/device_features/chiron.xml|1aed824338c05e31650f2d33de63d2dadc8771f2
-etc/device_features/sagit.xml|dcc2db8f4b64bb3e27841ada5d484a812e2b31cf
+etc/device_features/ginkgo.xml
+etc/device_features/willow.xml
+
+# Fonts
+vendor/camera/fonts/MFYueYuan-Regular.ttf
+vendor/camera/fonts/MI+LanTing_GB+Outside+YS_V2.3_20160322.ttf
+vendor/camera/fonts/MIUI_Time.ttf
+
+# ArcSoft config
+vendor/etc/camera/beauty_ui9_intelligent_params.config
+
+# Camera service - from ginkgo MIUI 20.6.23
+lib/libcameraservice.so
