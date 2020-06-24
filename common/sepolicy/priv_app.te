@@ -1,0 +1,3 @@
+typeattribute priv_app system_executes_vendor_violators;
+
+allow priv_app vendor_camera_font_file:file r_file_perms;
