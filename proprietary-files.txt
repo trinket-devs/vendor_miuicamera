@@ -35,5 +35,5 @@ vendor/camera/fonts/MIUI_Time.ttf
 # ArcSoft config
 vendor/etc/camera/beauty_ui9_intelligent_params.config
 
-# Camera service - from ginkgo MIUI 20.6.23
+# Camera service - from ginkgo MIUI 20.8.20
 lib/libcameraservice.so
