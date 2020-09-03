@@ -1,5 +1,5 @@
-# MiuiCamera - from laurel_sprout V11.0.15.0.QFQMIXM - manually patched
--priv-app/MiuiCamera/MiuiCamera.apk|2a742a5feefa5e95e3f7e7fb2425942b7a2b2d26
+# MiuiCamera - from laurel_sprout V11.0.20.0.QFQMIXM - manually patched
+-priv-app/MiuiCamera/MiuiCamera.apk|65cd34d64337d3b378f4323d87d76b15b698c64f
 
 # MiuiCamera - libraries - from laurel_sprout V11.0.15.0.QFQMIXM
 lib64/libarc_layer_sgl.so:priv-app/MiuiCamera/lib/arm64/libarc_layer_sgl.so
