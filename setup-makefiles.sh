@@ -29,7 +29,7 @@ if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
 ROOT="$MY_DIR/../.."
 
-HELPER="$ROOT"/vendor/pa/build/tools/extract_utils.sh
+HELPER="$ROOT"/tools/extract-utils/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
@@ -46,8 +46,6 @@ sed -i 's|vendor/miuicamera/|vendor/miuicamera/common|g' $PRODUCTMK
 sed -i 's|device/miuicamera//setup-makefiles.sh|vendor/miuicamera/setup-makefiles.sh|g' $ANDROIDBP $ANDROIDMK $BOARDMK $PRODUCTMK
 
 write_makefiles "$MY_DIR"/proprietary-files.txt true
-line_number=$(grep -rn 'name: "MiuiCamera"' $ANDROIDBP | awk '{print $1}' | tr -d ":")
-sed -i "$line_number a \\\toverrides: [\"Camera2\", \"Snap\"]," $ANDROIDBP
 
 # Finish
 write_footers

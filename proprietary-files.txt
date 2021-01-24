@@ -1,31 +1,27 @@
-# MiuiCamera - from laurel_sprout V11.0.20.0.QFQMIXM - manually patched
--priv-app/MiuiCamera/MiuiCamera.apk|65cd34d64337d3b378f4323d87d76b15b698c64f
+# MiuiCamera - from laurel_sprout V12.0.3.0.RFQMIXM - manually patched
+-priv-app/MiuiCamera/MiuiCamera.apk;OVERRIDES=Camera2;platform
 
-# MiuiCamera - libraries - from laurel_sprout V11.0.15.0.QFQMIXM
+# MiuiCamera - libraries - from laurel_sprout V12.0.3.0.RFQMIXM
 lib64/libarc_layer_sgl.so:priv-app/MiuiCamera/lib/arm64/libarc_layer_sgl.so
-lib64/libCameraEffectJNI.so:priv-app/MiuiCamera/lib/arm64/libCameraEffectJNI.so
 lib64/libarcsoft_wideselfie.so:priv-app/MiuiCamera/lib/arm64/libarcsoft_wideselfie.so
 lib64/libcamera_arcsoft_beautyshot.so:priv-app/MiuiCamera/lib/arm64/libcamera_arcsoft_beautyshot.so
 lib64/libcamera_arcsoft_handgesture.so:priv-app/MiuiCamera/lib/arm64/libcamera_arcsoft_handgesture.so
 lib64/libcamera_beauty_mpbase.so:priv-app/MiuiCamera/lib/arm64/libcamera_beauty_mpbase.so
+lib64/libCameraEffectJNI.so:priv-app/MiuiCamera/lib/arm64/libCameraEffectJNI.so
 lib64/libcamera_handgesture_mpbase.so:priv-app/MiuiCamera/lib/arm64/libcamera_handgesture_mpbase.so
 lib64/libcamera_wideselfie_mpbase.so:priv-app/MiuiCamera/lib/arm64/libcamera_wideselfie_mpbase.so
 lib64/libcom.xiaomi.camera.requestutil.so:priv-app/MiuiCamera/lib/arm64/libcom.xiaomi.camera.requestutil.so
 lib64/libhandengine.arcsoft.so:priv-app/MiuiCamera/lib/arm64/libhandengine.arcsoft.so
 lib64/libjni_arcsoft_beautyshot.so:priv-app/MiuiCamera/lib/arm64/libjni_arcsoft_beautyshot.so
+lib64/libjni_jpegutil_xiaomi.so:priv-app/MiuiCamera/lib/arm64/libjni_jpegutil_xiaomi.so
 lib64/libjni_wideselfie.so:priv-app/MiuiCamera/lib/arm64/libjni_wideselfie.so
 lib64/libmorpho_memory_allocator.so:priv-app/MiuiCamera/lib/arm64/libmorpho_memory_allocator.so
-lib64/libmorpho_panorama.so:priv-app/MiuiCamera/lib/arm64/libmorpho_panorama.so
-lib64/libmorpho_panorama_gp.so:priv-app/MiuiCamera/lib/arm64/libmorpho_panorama_gp.so
 lib64/libmorpho_panorama_gp3.so:priv-app/MiuiCamera/lib/arm64/libmorpho_panorama_gp3.so
 lib64/libmorpho_sensor_fusion.so:priv-app/MiuiCamera/lib/arm64/libmorpho_sensor_fusion.so
 
 # Permission
+etc/default-permissions/miuicamera-permissions.xml
 etc/permissions/privapp-permissions-miuicamera.xml
-
-# Device features
-etc/device_features/ginkgo.xml
-etc/device_features/willow.xml
 
 # Fonts
 vendor/camera/fonts/MFYueYuan-Regular.ttf
@@ -34,6 +30,3 @@ vendor/camera/fonts/MIUI_Time.ttf
 
 # ArcSoft config
 vendor/etc/camera/beauty_ui9_intelligent_params.config
-
-# Camera service - from ginkgo MIUI 20.8.20
-lib/libcameraservice.so
