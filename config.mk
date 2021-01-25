@@ -14,6 +14,10 @@
 
 $(call inherit-product, vendor/miuicamera/common/common-vendor.mk)
 
+# Notch
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.miui.notch=1
+
 # Sepolicy
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
     vendor/miuicamera/sepolicy/private
