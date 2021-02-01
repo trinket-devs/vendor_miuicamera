@@ -1,4 +1,4 @@
-# MiuiCamera - from laurel_sprout V12.0.3.0.RFQMIXM - manually patched
+# MiuiCamera - from laurel_sprout V11.0.23.0.QFQMIXM - manually patched
 -priv-app/MiuiCamera/MiuiCamera.apk;OVERRIDES=Camera2;platform
 
 # MiuiCamera - libraries - from laurel_sprout V12.0.3.0.RFQMIXM

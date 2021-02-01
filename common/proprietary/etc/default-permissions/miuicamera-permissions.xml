@@ -24,8 +24,6 @@
             fixed="true" />
         <permission name="android.permission.WRITE_MEDIA_STORAGE" 
             fixed="true" />
-        <permission name="android.permission.MANAGE_EXTERNAL_STORAGE" 
-            fixed="true" />
         <!-- Omni -->
         <permission name="android.permission.INTERACT_ACROSS_USERS" 
             fixed="true" />
